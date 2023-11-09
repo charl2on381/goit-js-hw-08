@@ -14,6 +14,6 @@ function onPlay(data) {
   localStorage.setItem(LOCALSTORAGE_KEY, currentTime);
 }
 
-const savedTime = Number(localStorage.getItem(LOCALSTORAGE_KEY)); //? працює і без Number хоча за документацією setCurrentTime приймає number як параметр
+const savedTime = Number(localStorage.getItem(LOCALSTORAGE_KEY)); 
 
 player.setCurrentTime(savedTime || 0);
